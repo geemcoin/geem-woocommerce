@@ -56,7 +56,6 @@ Once you have installed and activated WooCommerce, you may install and activate 
 3.  Activate.
 4.  Download and install the Geem CLI suite from: https://geem.io/downloads/
 5.  It is highly recommended to run walletd on the same server as your website for security reasons. By default, the plugin code is configured to use localhost or 127.0.0.1 as walletd host. You MUST use your own server to run walletd. Example: your.server.com:8070 or 127.0.0.1:8070 if walletd is running on the same server as your webserver. If walletd is not running on the same server as your webserver, you will need to modify the following files and either provide the hostname or the IP address running walletd. By default, the port is set at 8070 which can be modified depending on the port used when wallettd is run. Below is the list of files that will need to be updated accordingly.
-
 ./geemwc-utils.php:  $wallet_api = New ForkNoteWalletd("http://127.0.0.1:8070");
 ./geemwc-utils.php:  $fnw = New ForkNoteWalletd("http://127.0.0.1:8070");
 ./geemwc-utils.php:            $wallet_api = New ForkNoteWalletd("http://127.0.0.1:8070");
